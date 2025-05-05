@@ -1,5 +1,5 @@
 :root{
-    --primary: rgb(18, 39, 92);
+    --primary: rgb(10, 30, 107);
     --secondary: #171100;
     --tertiary: #adaba6;
     --four: #FFB900;
@@ -13,7 +13,6 @@ html{
 
 #header{
     height: var(--heigh-header);
-    width: 100%;
     background-color: var(--primary);
     display: flex;
     align-items: center;
@@ -68,6 +67,9 @@ main{
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+
 .main-nav a{
     text-decoration: none;
     color: var(--primary)
@@ -176,7 +178,7 @@ li.item1 {
 
 .main-content{
     width:100%;
-    max-height:560px;
+    height: 85%;
     border: var(--color-primary) 1px solid;
     padding:10px;
     display:flex;
@@ -188,4 +190,16 @@ li.item1 {
     border-radius: 30px;
 
 }
+input{
+    padding:10px;
+}
 
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+input[type="date"] {
+    background-image: url("/asset/icons/calendar.svg");
+    background-repeat: no-repeat;
+    background-position: right 4px center; /* Di chuyển icon sang phải 4px */
+
+}
