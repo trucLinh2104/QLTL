@@ -190,6 +190,22 @@ li.item1 {
     border-radius: 30px;
 
 }
+
+.main-content-query{
+    width: 100%;
+    height: calc(100% - 90px);
+    background-color: white;
+    gap:20px;
+    flex-direction: column;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+box-sizing: border-box;
+}
+
 input{
     padding:10px;
 }

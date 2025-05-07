@@ -3,8 +3,421 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+
+
+
+  <link rel="stylesheet"
+        href="./asset/css/reset.css"
+  >
+  <link rel="stylesheet"
+        href="./asset/css/main.css"
+  >
+
+  <link rel="stylesheet"
+        href="./asset/css/import-bill.css"
+  >
+
 </head>
 <body>
+<header>
+  <div id="header">
+    <div class="logo">
+      <img class="transparent-effect"
+           src="./asset/image/logo.png"
+           alt=""
+      >
+      <span>Công ty ABC</span>
+    </div>
+    <div class="action-btn">
+      <div class="notify-btn">
+        <img src="./asset/icons/icons8-bell-50.png"
+             alt=""
+        >
+      </div>
+      <div class="logout-btn">
+        <img src="./asset/icons/icons8-logout-50.png"
+             alt=""
+        >
+      </div>
+    </div>
+  </div>
+</header>
+<main>
 
+
+  <div class="main-nav">
+    <div class="avatar">
+      <img src="./asset/image/avatar.jpg"
+           alt=""
+      >
+      <span>Nguyễn Văn A</span>
+    </div>
+    <hr>
+    <ul class="list-option">
+      <li class="item1">
+        <img src="./asset/icons/chart-pie-svgrepo-com.svg"
+             alt=""
+        >
+        <a class="main-item"
+           href="./overview-page.html"
+        >Tổng quan</a>
+        <img src="./asset/icons/arrow.svg"
+             alt=""
+        >
+      </li>
+      <li class="item2 mul-option">
+        <img src="./asset/icons/folder.svg"
+             alt=""
+        >
+        <div class="option">
+          <a class="main-item"
+             href="./list-import-page.html"
+          >Xuất - Nhập</a>
+          <ul class="sub-item">
+            <li class="sub-item1"><a href="./list-import-page.html">Xuất</a></li>
+            <li class="sub-item2"><a href="./list-export-page.html">Nhập</a></li>
+          </ul>
+        </div>
+        <img class="sub-multi_option"
+             src="./asset/icons/arrow.svg"
+             alt=""
+        >
+      </li>
+      <li class="item3">
+        <img src="./asset/icons/setting.svg"
+             alt=""
+        >
+        <a class="main-item"
+           href="./manage.html"
+        > Quản lý kho</a>
+        <img src="./asset/icons/arrow.svg"
+             alt=""
+        >
+      </li>
+      <li class="item4 mul-option">
+        <img src="./asset/icons/list-menu.svg"
+             alt=""
+        >
+        <div class="option">
+          <a class="main-item"
+             href="./product-list.html"
+          >Danh mục</a>
+          <ul class="sub-item">
+            <li class="sub-item1">
+              <a href="./product-list.html">Sản phẩm</a>
+
+            </li>
+            <li class="sub-item2">
+              <a href="./product-list.html">Nhóm hàng</a></li>
+          </ul>
+        </div>
+
+        <img class="sub-multi_option"
+             src="./asset/icons/arrow.svg"
+             alt=""
+        >
+      </li>
+
+    </ul>
+  </div>
+
+  <div class="main-content-query">
+    <div class="btn-action">
+      <div class="row add-button">
+        <button class="action-button">
+         + Thêm từ file ngoài
+        </button>
+        <button class="action-button">
+         + Thêm từ hệ thống
+
+        </button>
+      </div>
+    </div>
+
+    <div class="title">
+      <h2>Phiếu nhập kho</h2>
+    </div>
+
+    <div class="content">
+      <div class="import-data-area">
+        <div class="col">
+          <div class="row">
+            <p class="title">Mã sản phẩm</p>
+            <input type="text">
+          </div>
+
+          <div class="row">
+            <p class="title">Số lượng</p>
+            <input type="text">
+          </div>
+
+          <div class="row">
+            <p class="title">Đơn giá</p>
+            <input type="text">
+          </div>
+
+          <div class="row">
+            <p class="title">Loại sản phẩm</p>
+            <input type="text">
+          </div>
+
+        </div>
+        <div class="col">
+          <div class="row bill_no">
+            <p class="title">Mã phiếu</p>
+            <input type="text">
+          </div>
+
+          <div class="row">
+            <p class="title">Lý do nhập</p>
+            <input type="text"
+                   id="date"
+            >
+          </div>
+
+          <div class="row add-button">
+            <button class="add-btn">
+              <img src="./asset/icons/add-plus.svg"
+                   alt="Nhập kho"
+              >
+              Thêm sản phẩm
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <table>
+        <thead>
+        <tr>
+          <th>Mã SP</th>
+          <th>Tên SP</th>
+          <th>Loại</th>
+          <th>Giá</th>
+          <th>Số lượng</th>
+          <th>Nhà cung cấp</th>
+          <th>Ngày nhập</th>
+          <th>Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        <tr  data-masp="SP001">
+          <td>SP001</td>
+          <td>Sản phẩm A</td>
+          <td>Điện tử</td>
+          <td>2,000,000</td>
+          <td>10</td>
+          <td>Cty ABC</td>
+          <td>2025-05-01</td>
+          <td>
+            <img src="asset/icons/delete-2.svg"
+                 alt=""
+                 class="delete-btn"
+
+            >
+            <img src="asset/icons/edit.svg"
+                 alt=""
+                 class="edit-btn"
+            >
+          </td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr  data-masp="SP001">
+          <td colspan="6" >TỔNG</td>
+          <td colspan="2" >10.000.000</td>
+        </tr>
+        </tfoot>
+      </table>
+    </div>
+
+  </div>
+
+</main>
+<script src="./service/javascript/main.js"></script>
+<script src="./service/javascript/import-bill.js"></script>
 </body>
 </html>

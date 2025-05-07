@@ -1,18 +1,4 @@
-.main-content-query {
-    width: 100%;
-    height: 100%;
-    background-color: #ebebeb;
-    gap:20px;
-    flex-direction: column;
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
 
-    overflow: hidden;
-    overflow-y: auto;
-    position: relative;
-
-}
 
 .search-area {
     display: flex;
@@ -112,7 +98,11 @@ button{
     left: 10px;
     top: 12px;
 }
+input{
+    border: none;
+    box-shadow: inset 0 0 5px #626161;
 
+}
 .grid-container{
     width: 100%;
     height: 55%;
@@ -150,6 +140,8 @@ button{
 }
 .grid-item >img{
     padding: 10px;
+    width: 30px;
+    height: 30px;
 }
 /* Bo góc */
 .grid-header:first-child {
@@ -174,5 +166,5 @@ button{
 .grid-item:nth-child(12n+4),
 .grid-item:nth-child(12n+5),
 .grid-item:nth-child(12n+6) {
-    background-color: #c6e2ef;
+    background-color: #d7eefa;
 }
